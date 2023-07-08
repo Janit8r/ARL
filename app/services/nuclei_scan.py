@@ -91,6 +91,7 @@ class NucleiScan(object):
 
         command = [self.nuclei_bin_path, "-duc",
                    "-tags cve",
+                   "-t /tmp/TPALL",
                    "-severity low,medium,high,critical",
                    "-type http",
                    "-l {}".format(self.nuclei_target_path),
