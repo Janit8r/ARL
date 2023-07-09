@@ -184,3 +184,4 @@ class UploadARLFinger(ARLResource):
             return utils.build_ret(ErrorMsg.Error, {'msg': str(e)})
 
 
+file_upload.add_argument('file', type=werkzeug.datastructures.FileStorage, location='files', default='/tmp/finger.json')
